@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT account REGISTRAION </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Enter student details</h1>
+    <form action="index.php" method="post">
+
+        <label for="studentID">Student ID</label> <br>
+        <input type="text" name="studentID" id="studentID" placeholder="ENTER YOUR ID: B20225____" required> <br>
+
+        <label for="firstName">First Name</label><br>
+        <input type="text" name="firstName" id="firstName" placeholder="ENTER YOUR FIRST NAME:" required> <br>
+
+        <label for="lastName">Last Name</label> <br>
+        <input type="text" name="lastName" id="lastName" placeholder="ENTER YOUR LAST NAME:" required> <br>
+
+        <label for="course">Choose/enter your course:</label>
+        <input list="courses" id="course" name="course" placeholder="Select or type..." required>
+
+        <datalist id="courses">
+            <option value="Computer Science">
+            <option value="Mathematics">
+            <option value="Physics">
+            <option value="Chemistry">
+            <option value="Engineering">
+        </datalist>
+        <br>
+
+        <label for="level">ENTER YOUR year level:</label> <br>
+        <input type="number" list="levels" name="level" id="level" placeholder="eg. 100/200/300/400" required>
+        <datalist id="levels">
+            <option value="100">
+            <option value="200">
+            <option value="300">
+            <option value="400">
+        </datalist>
+        <br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
