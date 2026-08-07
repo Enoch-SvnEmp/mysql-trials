@@ -39,5 +39,7 @@ $result = mysqli_query($connect, $sqlinsert);
 ?>
 
 </div>
+
+<a href="account_table.php">view table</a>
 </body>
 </html>
